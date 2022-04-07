@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="origin" fetch="ssh://git@github.com"/>
+    <default revision="master" remote="origin"/>
+
+    <project path="OnlineJudgeFE" name="knue-comedu/OnlineJudgeFE"/>
+    <project path="OnlineJudgeBE" name="knue-comedu/OnlineJudgeBE"/>
+    <project path="OnlineJudgeDeploy" name="knue-comedu/OnlineJudgeDeploy">
+        <copyfile src="docker-compose.yml" dest="docker-compose.yml" />
+    </project>
+    <project path="Judger" name="knue-comedu/Judger"/>
+    <project path="JudgeServer" name="knue-comedu/JudgeServer"/>
+</manifest>
