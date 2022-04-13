@@ -1,6 +1,8 @@
 # How to download KNUE OnlineJudge 
 
-## Using repo
+## Download KNUE-OJ
+
+### Using repo
 
 1. install repo
 
@@ -34,7 +36,7 @@ repo sync
 
 sync 완료 시 KNUE OnlineJudge의 모든 소스가 다운로드 될 것이다.
 
-## Using git clone
+### Using git clone
 
 1. Enter following command
 
@@ -51,6 +53,20 @@ git clone https://github.com/knue-comedu/OnlineJudgeDeploy
 cp OnlineJudgeDeploy/docker-compose.yml docker-compose.yml
 ```
 
+## Front-End build and docker-compose run
+
+1. move OnlineJudgeFE and npm build
+
+```bash
+cd OnlineJudgeFE
+
+npm install
+npm run build:dll
+npm run build
+
+cd ..
+```
+
 2. docker-compose up
 
 ```bash
@@ -63,6 +79,7 @@ Judger JudgeServer OnlineJudgeBE OnlineJudgeFE 폴더와 docker-compose.yml 파�
 
 ```bash
 $ tree -L 1
+
 ├── JudgeServer  
 ├── Judger  
 ├── OnlineJudgeBE  
