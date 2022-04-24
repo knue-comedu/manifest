@@ -53,6 +53,16 @@ git clone https://github.com/knue-comedu/OnlineJudgeDeploy
 cp OnlineJudgeDeploy/docker-compose.yml docker-compose.yml
 ```
 
+1-1. another git clone method (using ssh)
+
+```bash
+git clone git@github.com:knue-comedu/Judger.git
+git clone git@github.com:knue-comedu/JudgeServer.git
+git clone git@github.com:knue-comedu/OnlineJudgeFE.git
+git clone git@github.com:knue-comedu/OnlineJudgeBE.git
+git clone git@github.com:knue-comedu/OnlineJudgeDeploy.git
+```
+
 ## Front-End build and docker-compose run
 
 1. move OnlineJudgeFE and npm build
